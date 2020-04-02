@@ -2,3 +2,14 @@
 <p>{{ username }}</p>
 
 <button [disabled]="!username" (click)="username=''">Reset</button>
+
+
+
+<p>Second Practice</p>
+<button (click)="ClickEvent()" >Display Details</button>
+<p *ngIf="!display">Text Text Text Text Text Text Text</p>
+<p *ngFor="let item of tableau" 
+   [ngStyle]="{backgroundColor: item >= 5 ? 'blue' : 'transparent'}"
+   [ngClass]="{'white-text': item >= 5}">
+   {{item}}</p>
+
